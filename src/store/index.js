@@ -1,12 +1,18 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+import ui from './modules/ui'
+import biz from './modules/biz'
+
+Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {},
   getters: {},
   mutations: {},
   actions: {},
-  modules: {},
-});
+  modules: {
+    ui,
+    biz,
+  },
+})
